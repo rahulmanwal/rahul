@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"
+        integrity="sha512-sFxujqk42J/YUzNWaw6gEBFl1W2McUk4tsvrm92tEyGAigfvOPNxQjZQUk3Db9a9kTYnCpwFBQKc7wuV5PUR7g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        .card {
+            height: 500px;
+            width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            height: 200px;
+            width: 200px;
+        }
+        #b1{
+            display: none;
+        }
+        #rahul{
+            display: none;
+        }
+        
+    </style>
+    <title></title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid" style="font-size: 50px; display: flex; align-items: center;">
+            <ul class="navbar-nav">
+
+                <a class="navbar-brand" href="#">
+                    <img src="bootstrap.jpg" alt="Avator Logo" style="height:150px; width: 150px;" class="rounded-pill">
+                </a>
+
+                <li class="nav-item">
+                    <a class="nav-link active" hssref="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex mt-3">
+                <input class="form-control me-2" type="text" placeholder="search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
+
+        </div>
+    </nav>
+    <div id="demo" class="carousel-slide" data-bs-ride="carousel" style="margin-top: 150px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="nainital.jpg" alt="Los Angeles" class="d-block" height="500px" width="200px"
+                    style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="rishikesh.jpg" alt="Chicago" class="d-block" height="500px" width="200px" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="auli.jpg" alt="New York" class="d-block" height="500px" width="200px" style="width:100%">
+            </div>
+
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+    <br>
+
+
+    <h2 style="display: flex; align-items: center; justify-content: center; margin-top: 50px;"> Properties for sale in
+        dehradun </h2>
+
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" margin="10px" style="width:400px">
+                    <img src="flat 2.jpg" alt="Card image">
+                    <div class="card-body">
+                        <BUTTON class="btn btn-primary">
+                            <h4 class="card-title">DOON VALLEY </h4>
+                        </BUTTON>
+                        <p class="card-text">The Doon Valley is an unusually<br> wide, long valley within the
+                            <br>Sivalik Hills and the Lesser Himalayas.
+                        </p>
+                        <p><b>2, 3 BHK Flat in GMS Road Dehradun</b></p>
+                        <p><b>₹ 69.91 L - 1.79 Cr</b></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="flat 1.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <button class="btn btn-success">
+                            <h4 class="card-title">VASANT VIHAR</h4>
+                        </button>
+                        <p class="card-text">Vasant Vihar is one of the finest <BR>colony in Dehradun with wide
+                            internal<BR> roads and huge bungalows.
+                        </p>
+                        <p><b> 3 BHK Flat in Vikasnagar Road Dehradun</b></p>
+                        <p><b>₹ 79.91 L - 1.59 Cr</b></p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="flat 4.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <button class="btn btn-danger">
+                            <h4 class="card-title">GOLF ESTATE </h4>
+                        </button>
+                        <p class="card-text">Spread over an area of 35 acres,<BR> Pacific Golf Estate is one of the
+                            <BR>spacious housing societies.
+                        </p>
+                        <p><b> 2 BHK Flat in Sahastradhara Road Dehradun</b></p>
+                        <p><b>₹ 89.91 L - 1.52 Cr</b></p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="flat 3.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <button class="btn btn-dark">
+                            <h4 class="card-title">DEFENCE COLONY</h4>
+                        </button>
+                        <p class="card-text">Defense Colony is one of the best<BR> areas in Dehradun with all amenities
+                            <BR>and good connectivity.
+                        </p>
+                        <p><b> 2 BHK Flat near clock tower,Dehradun</b></p>
+                        <p><b>₹ 89.91 L - 1.52 Cr</b></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="row" id="rahul">
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="flat 5.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <button class="btn btn-info">
+                                <h4 class="card-title">AVIRAL GREENS</h4>
+                            </button>
+                            <p class="card-text">Aviral Greens is a residential<BR> development in Kishanpur, Dehradun.
+                                <BR>The project is built by Maa<BR> Balasundari Realtors.
+                            </p>
+                            <p><b>1, 2 BHK Flat in Rajpur Road Dehradun</b></p>
+                            <p><b>₹ 45 - 78.3 L</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="flat 6.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <button class="btn btn-primary">
+                                <h4 class="card-title">VANSHIKA GREENS</h4>
+                            </button>
+                            <p class="card-text">Vanshika Greens in Rajpur Road, <BR>Dehradun by Anirudh Land Promoters
+                                <BR>is a residential project.
+                            </p>
+                            <p><b>1, 2 BHK Flat in near dwarka store,Dehradun</b></p>
+                            <p><b>₹ 85 - 98.3 L</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="flat 7.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <button class="btn btn-warning">
+                                <h4 class="card-title">BEST ORIANA</h4>
+                            </button>
+                            <p class="card-text">With ample green spaces, fresh air<BR> and sunlight, Oriana stands<BR>
+                                just
+                                20 kms away from Mussoorie.
+                            </p>
+                            <p><b>2, 3, 4 BHK Flat in Mussoorie Road Dehradun</b></p>
+                            <p><b>₹ 95 L - 1.43 Cr</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="flat 8.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <button class="btn btn-secondary">
+                                <h4 class="card-title">EASTERN ARC</h4>
+                            </button>
+                            <p class="card-text">Eastern Arc Phase 2 in Badowala,<BR> one of the upcoming
+                                under-construction
+                                <BR>housing societies in Dehradun.
+                            </p>
+                            <p><b>Nearby :Swami Vivekanad Public School Shimla Bypass Road</b></p>
+                            <p><b>₹ 48.01 - 60.01 L</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="flat 9.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <button class="btn btn-danger">
+                                <h4 class="card-title">ALTURA LUX</h4>
+                            </button>
+                            <p class="card-text">Altura Lux Dehradun has some<BR> great amenities to offer such as
+                                <BR>Swimming Pool, Banquet Hall.
+                            </p>
+                            <p><b>2, 3 BHK Flat in GMS Road Dehradun</b></p>
+                            <p><b>₹ 69.91 L - 1.79 Cr</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="flat 10.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <button class="btn btn-success">
+                                <h4 class="card-title">Avenue Jewel Sapphire</h4>
+                            </button>
+                            <p class="card-text">Avenue Jewel Sapphire is<br> a residential development<br> in
+                                Dharampur,
+                                Dehradun.
+                            </p>
+                            <p><b>3, 4 BHK Flat in Dalanwala Dehradun</b></p>
+                            <p><b>₹ 1.11 Cr - 1.25 Cr</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="flat 11.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <button class="btn btn-secondary">
+                                <h4 class="card-title">Windlass River Valley</h4>
+                            </button>
+                            <p class="card-text">Newly-built 3,4 BHK flats in<br> Avenue Jewel Sapphire, Dalanwala,<br>
+                                Dehradun, are available for booking.
+                            </p>
+                            <p><b>1, 2, 3, 4, 5 BHK Flat in Harrawala Dehradun</b></p>
+                            <p><b>₹ 23.93 L - 1.19 Cr</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="flat 12.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <button class="btn btn-warning">
+                                <h4 class="card-title">Kwality Joy Homes</h4>
+                            </button>
+                            <p class="card-text">Kwality Joy Homes in Race Course,one<br> of the upcoming
+                                under-construction<br> housing societies in Dehradun.
+                            </p>
+                            <p><b>2, 3 BHK Flat in Race Course Dehradun</b></p>
+                            <p><b>₹ 76.51 - 99.01 L</b></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button id="b1" class="bttn">HIDE</button>
+            <button id="b2" class="bttn">SHOW</button>
+
+            <div>
+
+                <form>
+                    <div style="background-color: aqua;width: 33%;border: 5px solid black;">
+                        <h1><b>REGISTRATION FORM</b></h1>
+                    </div>
+                    <p>NAME:<input type="text" Name="Rahul Manwal" placeholder="username"></p>
+                    <p>MOBILE:<input type="text" Mobile="Mobile" placeholder="eg.123456789"></p>
+                    <p>ADDRESS:<input type="text" Address="Address"></p>
+                    <p>Course:
+                        <select>
+                            <option>Select</option>
+                            <option>web developing</option>
+                            <option>graphic designing</option>
+                            <option>tally</option>
+                            <option>adca</option>
+                        </select>
+                    </p>
+
+                    <div id="">
+                        <button id="button"
+                            style="background-color: chartreuse; border:5px solid black ">SUBMIT</button>
+                    </div>
+                </form>
+            </div><br>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="rounded-circle" style="height: 400px;width: 400px;" src="amit shah.jpg">
+                            <h2>AMIT SHAH</h2>
+                            <button><a href="https://en.wikipedia.org/wiki/Amit_Shah">Know More</a></button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="rounded-circle" style="height: 400px;width: 400px;" src="modi.jpg">
+                            <h2>NARENDRA MODI</h2>
+                            <button><a href="https://www.narendramodi.in/">Know More</a></button>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="rounded-circle" style="height: 400px;width: 400px;" src="yogi.jpg">
+                            <h2>YOGI ADITYANATH</h2>
+                            <button><a href="https://en.wikipedia.org/wiki/Yogi_Adityanath">Know More</a></button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-center text-white">
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="home.php">thebulletcafe.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+<script type="text/javascript">
+    
+    $("#b1").click(function(){
+        $("#rahul").hide();
+        $("#b2").show();
+        $("#b1").hide();
+
+    })
+     $("#b2").click(function () {
+            $("#rahul").show();
+             $("#rahul").css("display","flex");
+              $("#rahul").css("flex-direction","row");
+            $("#b2").hide();
+            $("#b1").show();
+
+        })
+
+</script>
+
+</html>
